@@ -1,0 +1,738 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js"
+      integrity="sha384-G/EV+4j2dNv+tEPo3++6LCgdCROaejBqfUeNjuKAiuXbjrxilcCdDz6ZAVfHWe1Y"
+      crossorigin="anonymous"
+    ></script>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@14.0.1/swiper-bundle.min.js"></script>
+
+    <link rel="stylesheet" href="css/styleIndex.css" />
+
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <!-- Link Swiper's CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@14.0.1/swiper-bundle.min.css"
+    />
+
+    <script
+      src="https://kit.fontawesome.com/6d1607b36a.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <title>Home</title>
+  <body>
+    <header>
+      <div class="container">
+        <nav class="navbar hamburger fixed-top bg-white">
+          <div class="container-fluid">
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="offcanvas"
+              data-bs-target="#offcanvasDarkNavbar"
+              aria-controls="offcanvasDarkNavbar"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <p class="local">
+              Toronto,Canada . ON
+              <i class="fa-brands fa-canadian-maple-leaf"></i>
+            </p>
+            <div
+              class="offcanvas offcanvas-end navbar-dark bg-black"
+              tabindex="-1"
+              id="offcanvasDarkNavbar"
+              aria-labelledby="offcanvasDarkNavbarLabel"
+            >
+              <div class="offcanvas-header">
+                <label class="navbar-brand"
+                  ><label class="especialcase"> MR</label> Dreams Nails
+                </label>
+                <button
+                  type="button"
+                  class="btn-close btn-close-white"
+                  data-bs-dismiss="offcanvas"
+                  aria-label="Close"
+                ></button>
+              </div>
+              <div class="offcanvas-body">
+                <ul class="navbar-nav justify-content-end flex-grow-1 pe-2">
+                  <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href=""
+                      >Photo gallery</a
+                    >
+                  </li>
+
+                  <li class="nav-item dropdown">
+                    <a
+                      class="nav-link dropdown-toggle"
+                      href="#"
+                      role="button"
+                      data-bs-toggle="dropdown"
+                      aria-expanded="false"
+                    >
+                      Some answers
+                    </a>
+                    <ul class="dropdown-menu specialties">
+                      <!-- Button trigger modal -->
+                      <li>
+                        <a
+                          class="dropdown-item"
+                          type="button"
+                          data-bs-toggle="modal"
+                          data-bs-target="#bins"
+                          >Advantages of fiberglass nails</a
+                        >
+                      </li>
+                      <li><hr class="dropdown-divider" /></li>
+                      <li>
+                        <a
+                          class="dropdown-item"
+                          type="button"
+                          data-bs-toggle="modal"
+                          data-bs-target="#boom"
+                          >Why order a Boom pump?</a
+                        >
+                      </li>
+                      <li><hr class="dropdown-divider" /></li>
+                      <li>
+                        <a
+                          class="dropdown-item"
+                          type="button"
+                          data-bs-toggle="modal"
+                          data-bs-target="#ease_ontact"
+                          >Do I need to perform maintenance?</a
+                        >
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a
+                      class="nav-link dropdown-toggle"
+                      href="#"
+                      role="button"
+                      data-bs-toggle="dropdown"
+                      aria-expanded="false"
+                    >
+                      Contacts Us
+                    </a>
+                    <ul class="dropdown-menu contacts">
+                      <li>
+                        <a class="dropdown-item" href="#"
+                          ><i class="icon fa-solid fa-phone"></i> Cell Phone</a
+                        >
+                      </li>
+                      <li><hr class="dropdown-divider" /></li>
+                      <li>
+                        <a
+                          class="dropdown-item"
+                          href="mailto:.com?subject=Assunto&body="
+                        >
+                          <i class="fa-solid fa-message"></i> E-mail</a
+                        >
+                      </li>
+                      <li><hr class="dropdown-divider" /></li>
+                      <li>
+                        <a class="dropdown-item" href="#">
+                          <i class="fa-brands fa-instagram"></i> Social media</a
+                        >
+                      </li>
+                      <li><hr class="dropdown-divider" /></li>
+                      <li>
+                        <a
+                          class="dropdown-item"
+                          href="https://api.whatsapp.com/send/?phone=&text"
+                          target="_blank"
+                        >
+                          <i class="fa-brands fa-whatsapp"></i> Whatsapp</a
+                        >
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </nav>
+        <nav
+          class="navbar mainnav bg-dark navbar-expand-lg"
+          data-bs-theme="dark"
+        >
+          <div class="navbarindex">
+            <label class="navbar-brand"
+              ><label class="jd"> JD</label> Concrete
+            </label>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarScroll"
+              aria-controls="navbarScroll"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarScroll">
+              <ul
+                class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll"
+                style="--bs-scroll-height: 100px"
+              >
+                <li class="nav-item">
+                  <a class="nav-link" aria-current="page" href=""
+                    >Photo gallery</a
+                  >
+                  <!-- <a class="nav-link" aria-current="page" href="/gallery.html">Photo gallery</a> -->
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    Some answers
+                  </a>
+                  <ul class="dropdown-menu specialties">
+                    <!-- Button trigger modal -->
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        type="button"
+                        data-bs-toggle="modal"
+                        data-bs-target="#bins"
+                        >Size of our bins?</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        type="button"
+                        data-bs-toggle="modal"
+                        data-bs-target="#boom"
+                        >Why order a Boom pump?</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        type="button"
+                        data-bs-toggle="modal"
+                        data-bs-target="#ease_ontact"
+                        >Workers</a
+                      >
+                    </li>
+                    F
+                  </ul>
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    Contacts Us
+                  </a>
+                  <ul class="dropdown-menu contacts">
+                    <li>
+                      <a class="dropdown-item" href="#"
+                        ><i class="icon fa-solid fa-phone"></i> Cell Phone</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="mailto:?subject=Assunto&body="
+                      >
+                        <i class="fa-solid fa-message"></i> E-mail</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="#">
+                        <i class="fa-brands fa-instagram"></i> Social media</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="https://api.whatsapp.com/send/?phone=&text"
+                        target="_blank"
+                      >
+                        <i class="fa-brands fa-whatsapp"></i> Whatsapp</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+        <div class="slider hamburger">
+          <div class="slides">
+            <input type="radio" hidden name="move-btn" id="rd1" />
+            <input type="radio" hidden name="move-btn" id="rd2" />
+            <input type="radio" hidden name="move-btn" id="rd3" />
+            <input type="radio" hidden name="move-btn" id="rd4" />
+
+            <div class="slide slideone">
+              <img
+                class="slidesimg"
+                src="https://images.unsplash.com/photo-1522337660859-02fbefca4702"
+                alt=""
+              />
+            </div>
+            <div class="slide">
+              <img
+                class="slidesimg"
+                src="./img/slidernails/nail2.jpeg"
+                alt=""
+              />
+            </div>
+            <div class="slide">
+              <img
+                class="slidesimg"
+                src="https://images.unsplash.com/photo-1519014816548-bf5fe059798b"
+                alt=""
+              />
+            </div>
+            <div class="slide">
+              <img
+                class="slidesimg"
+                src="https://images.unsplash.com/photo-1604654894610-df63bc536371?w=500&q=80&auto=format&fit=crop"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+        <div class="row cards-info">
+          <div class="card" id="about">
+            <div class="card-image-about"></div>
+            <div class="card-body">
+              <h5 class="card-title" id="abouts">
+                <label class="navbar-brand"
+                  ><label class="especialcase"> MR </label> Dreams Nails</label
+                >
+              </h5>
+              <p class="p1">Perfect Nails</p>
+              <p class="p2">
+                Specialist in fiber and gel nails. Long-lasting, excellent, and
+                natural-looking results.
+              </p>
+              <button type="button" class="btn button_schendule">
+                <i class="fa-solid fa-calendar"></i>Book appointment right now
+              </button>
+            </div>
+          </div>
+          <section class="mission_card" id="oursrevice">
+            <div class="mission_card">
+              <!-- Swiper -->
+              <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <img
+                      class="slidesimg"
+                      src="./img/slidernails/nail4.jpeg"
+                      alt=""
+                    />
+                  </div>
+                  <div class="swiper-slide">
+                    <img
+                      class="slidesimg"
+                      src="./img/slidernails/nail3.jpeg"
+                      alt=""
+                    />
+                  </div>
+                  <div class="swiper-slide">
+                    <img
+                      class="slidesimg"
+                      src="./img/slidernails/nail2.jpeg"
+                      alt=""
+                    />
+                  </div>
+                  <div class="swiper-slide">
+                    <img
+                      class="slidesimg"
+                      src="https://images.unsplash.com/photo-1604654894610-df63bc536371?w=500&q=80&auto=format&fit=crop"
+                    />
+                  </div>
+                  <div class="swiper-slide">
+                    <img
+                      class="slidesimg"
+                      src="./img/slidernails/nail5.jpeg"
+                      alt=""
+                    />
+                  </div>
+                </div>
+                <div class="swiper-pagination"></div>
+              </div>
+              <br />
+              <p class="card-title" id="missions">Our Services</p>
+              <div class="card-body">
+                <div class="cardservices">
+                  <div class="card">
+                    <img
+                      src="./img/serviceNail/service1.jpeg"
+                      class="card-img"
+                      alt="..."
+                    />
+                    <p class="card-title_services">Fiberglass</p>
+                    <p class="card-text_secrvices">Natural and durable.</p>
+                    <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+                  </div>
+
+                  <div class="card">
+                    <img
+                      src="/img/serviceNail/service2.jpeg"
+                      class="card-img"
+                      alt="..."
+                    />
+
+                    <p class="card-title_services">Gel Nails.</p>
+                    <p class="card-text_secrvices">Long-lasting Shine.</p>
+                    <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+                  </div>
+                  <div class="card">
+                    <img
+                      src="/img/serviceNail/srevice3.jpeg"
+                      class="card-img"
+                      alt="..."
+                    />
+
+                    <p class="card-title_services">Natural Nails.</p>
+                    <p class="card-text_secrvices">Naturally perfect.</p>
+                    <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+                  </div>
+                  <div class="card">
+                    <img
+                      src="/img/serviceNail/service4.jpeg"
+                      class="card-img"
+                      alt="..."
+                    />
+
+                    <p class="card-title_services">Custom colors.</p>
+                    <p class="card-text_secrvices">
+                      Vivid and long-lasting colors.
+                    </p>
+                    <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <div class="navigationarea_card">
+            <div class="card-body">
+              <div class="links">
+                <label class="labelnavigation">Navigation</label>
+                <a class="nav-link" aria-current="page" href="">Home</a>
+                <a class="nav-link" aria-current="page" href=""
+                  >Photo gallery</a
+                >
+                <a class="nav-link" aria-current="page" href="#oursrevice"
+                  >Ours Services</a
+                >
+                <a class="nav-link" aria-current="page" href=""
+                  >Where we provide service</a
+                >
+                <a
+                  class="nav-link"
+                  aria-current="page"
+                  data-bs-toggle="modal"
+                  data-bs-target="#common_questions"
+                  >Common questions</a
+                >
+                <label class="labelnavigation">Contact</label>
+                <p>+1 (000)-000-0000</p>
+                <label class="labelnavigation">hours</label>
+                <p>Mon-sat 7:00 AM - 9:00PM</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!--- modals area -->
+
+    <!--regular Modal -->
+    <div
+      class="modal fade"
+      id="bins"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">
+              Size of our bins?
+            </h1>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="card-image-modal-regular"></div>
+          <div class="modal-body">
+            <p>
+              It is primarily indicated for projects that require flexibility,
+              precision in hard-to-reach locations, or for small to medium
+              volumes of concrete. Unlike a boom pump, a line pump uses flexible
+              hoses that can be installed through buildings, narrow alleys, or
+              inside houses.
+            </p>
+            <ul></ul>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn close" data-bs-dismiss="modal">
+              Close
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <section class="modals">
+      <!-- Modal -->
+      <div
+        class="modal fade"
+        id="boom"
+        tabindex="-1"
+        aria-labelledby="exampleModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="exampleModalLabel">
+                Why order a Boom pump?
+              </h1>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="card-image-modal-deep"></div>
+            <div class="modal-body">
+              <p>
+                It is essential for projects that require speed,
+                vertical/horizontal reach, and efficiency in concreting,
+                especially in large-scale or difficult-to-access projects.
+              </p>
+              <ul></ul>
+            </div>
+            <div class="modal-footer">
+              <button
+                type="button"
+                class="btn btn close"
+                data-bs-dismiss="modal"
+              >
+                Close
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!--Modal -->
+      <div
+        class="modal fade"
+        id="ease_ontact"
+        tabindex="-1"
+        aria-labelledby="exampleModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="exampleModalLabel">
+                Our team members
+              </h1>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="card-image-modal-construction"></div>
+            <div class="modal-body">
+              <p>
+                Our team members are trained professionals committed to their
+                roles, with the goal of helping you realize your project.
+              </p>
+            </div>
+
+            <div class="modal-footer">
+              <button
+                type="button"
+                class="btn btn close"
+                data-bs-dismiss="modal"
+              >
+                Close
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!--rent-me Modal -->
+      <div
+        class="modal fade rentmemodal"
+        id="common_questions"
+        tabindex="-1"
+        aria-labelledby="exampleModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <button
+              class="cart botao-flutuante"
+              type="button"
+              class="btn btn close"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="exampleModalLabel">
+                Frequently asked questions
+              </h1>
+
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="unhasdanificadas image"></div>
+            <div class="modal-body modal-body-rent_me">
+              <p class="type">Why do gel nails require maintenance?</p>
+              <p id=" description" class="description">
+                1. Natural growth Your nails grow an average of 3mm per month.
+                After 2–3 weeks, a gap appears between the gel and the cuticle.
+                The look is no longer flawless, and the space can collect dirt
+                and bacteria. 2. Loss of adhesion Over time, the gel may begin
+                to lift slightly due to activities like washing dishes, using
+                cleaning products, or accidental knocks. If you don’t get a fill
+                (maintenance), water can seep underneath, potentially leading to
+                fungal growth (that green spot no one wants) or causing the nail
+                to break. 3. Balance and strength Gel nails are designed with a
+                specific balance point, known as the "apex." As the nail grows
+                out, the weight shifts toward the tip, making it more prone to
+                breaking or cracking in the middle—which can be painful.
+              </p>
+              <ul></ul>
+              <div class="buttons_rent-me"></div>
+            </div>
+            <hr class="delimitation" />
+            <div class="manicured-nails image"></div>
+            <div class="modal-body modal-body-rent_me">
+              <p class="type">How long can my nails last?</p>
+              <p id=" description" class="description">
+                Ideal timing in Toronto: Gel: every 2–3 weeks; Fiber: every 3–4
+                weeks (it lasts longer, which is why Brazilians love it).
+                Canada’s cold, dry climate causes more dehydration, so
+                maintenance sessions also help with hydration.
+              </p>
+              <ul></ul>
+              <div class="buttons_rent-me"></div>
+            </div>
+
+            <hr class="delimitation" />
+            <div class="advantages image"></div>
+            <div class="modal-body modal-body-rent_me">
+              <p class="type">
+                What are the advantages of having gel or fiber nails?
+              </p>
+              <p id=" description14yard" class="description">
+                FIBERGLASS - the most requested option in Canada: More natural
+                look: The fine fiberglass strands are ultra-thin, making them
+                look just like your own nails. Highly durable: Won’t easily
+                break, even in Toronto’s -20°C cold. Long-lasting (30+ days):
+                Perfect for those with a busy lifestyle. Great for length: Ideal
+                if you’ve bitten your nails or want long, almond-shaped nails.
+                Strong adhesion: Doesn’t lift or peel easily. GEL - for that
+                mirror-like shine: Long-lasting shine: Stays looking freshly
+                done for 3 weeks. Faster application: Takes 1.5 hours, compared
+                to 2.5 hours for fiberglass. Less initial prep: Requires less
+                filing. Versatile: Perfect for "baby boomer" (ombré) styles,
+                French manicures, and encapsulated designs. Easier removal:
+                Comes off quickly whenever you’re ready to take it off.
+              </p>
+              <ul></ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <nav class="navbar-final">
+          <div class="colum">
+            <div class="col">
+              <label class="navbar-brand"
+                ><label class="jdcell jd">Follow Us</label>
+              </label>
+            </div>
+            <!-- Link para o Facebook -->
+            <a href="" target="_blank" style="text-decoration: none">
+              <i class="fa-brands fa-facebook links_navdown"></i>
+            </a>
+
+            <!-- Link para o Instagram -->
+            <a href="" target="_blank" style="text-decoration: none">
+              <i class="fa-brands fa-instagram links_navdown"></i>
+            </a>
+
+            <a href="" target="_blank">
+              <i class="fa-brands fa-tiktok links_navdown"></i>
+            </a>
+          </div>
+        </nav>
+      </footer>
+    </section>
+    <script src="js/index.js" defer></script>
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        pagination: {
+          el: ".swiper-pagination",
+        },
+      });
+    </script>
+  </body>
+</html>

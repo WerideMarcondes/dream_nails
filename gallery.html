@@ -1,0 +1,525 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gallery</title>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js"
+      integrity="sha384-G/EV+4j2dNv+tEPo3++6LCgdCROaejBqfUeNjuKAiuXbjrxilcCdDz6ZAVfHWe1Y"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script
+      src="https://kit.fontawesome.com/6d1607b36a.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="js/galerry.js"></script>
+    <link rel="stylesheet" href="css/styleGallery.css" />
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <nav class="navbar hamburger fixed-top navbar-dark bg-dark">
+          <div class="container-fluid">
+            <button class="corporate" onclick="logo()">
+              <img class="logo" src="./slidesbkg/logo.jpeg" alt="" />
+            </button>
+            <label class="navbar-brand"
+              ><label class="jd"> JD</label> Gallery</label
+            >
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="offcanvas"
+              data-bs-target="#offcanvasDarkNavbar"
+              aria-controls="offcanvasDarkNavbar"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div
+              class="offcanvas offcanvas-end navbar-dark bg-dark"
+              tabindex="-1"
+              id="offcanvasDarkNavbar"
+              aria-labelledby="offcanvasDarkNavbarLabel"
+            >
+              <div class="offcanvas-header">
+                <label class="navbar-brand">Gallery</label>
+                <button
+                  type="button"
+                  class="btn-close btn-close-white"
+                  data-bs-dismiss="offcanvas"
+                  aria-label="Close"
+                ></button>
+              </div>
+              <div class="offcanvas-body">
+                <ul class="navbar-nav justify-content-end flex-grow-1 pe-2">
+                  <li class="nav-item">
+                    <a
+                      class="nav-link"
+                      aria-current="page"
+                      href="https://weridemarcondes.github.io/jdconcret/index.html"
+                      >Home</a
+                    >
+                    <!-- <a class="nav-link" aria-current="page" href="/index.html"
+                      >Home</a
+                      
+                    > -->
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a
+                      class="nav-link dropdown-toggle navbar-dark bg-dark"
+                      href="#"
+                      role="button"
+                      data-bs-toggle="dropdown"
+                      aria-expanded="false"
+                    >
+                      Select
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li>
+                        <a
+                          class="dropdown-item"
+                          class="btn-close btn-close-white"
+                          data-bs-dismiss="offcanvas"
+                          aria-label="Close"
+                          onclick="Showboom()"
+                          ><i class="fa-solid fa-earth-americas"></i> boom</a
+                        >
+                      </li>
+                      <li><hr class="dropdown-divider" /></li>
+                      <li>
+                        <a
+                          class="dropdown-item"
+                          class="btn-close btn-close-white"
+                          data-bs-dismiss="offcanvas"
+                          aria-label="Close"
+                          onclick="Showmaintenancehome()"
+                        >
+                          <i class="fa-solid fa-leaf"></i> line</a
+                        >
+                      </li>
+                      <li><hr class="dropdown-divider" /></li>
+                      <li>
+                        <a
+                          class="dropdown-item"
+                          class="btn-close btn-close-white"
+                          data-bs-dismiss="offcanvas"
+                          aria-label="Close"
+                          onclick="Showconstruction()"
+                        >
+                          <i class="fa-solid fa-helmet-safety"></i>
+                          Construction</a
+                        >
+                      </li>
+                      <li><hr class="dropdown-divider" /></li>
+                      <li>
+                        <a
+                          class="dropdown-item"
+                          class="btn-close btn-close-white"
+                          data-bs-dismiss="offcanvas"
+                          aria-label="Close"
+                          onclick="ShowEverything()"
+                          ><i class="fa-solid fa-images"></i> Show Everything</a
+                        >
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a
+                      class="nav-link dropdown-toggle"
+                      href="#"
+                      role="button"
+                      data-bs-toggle="dropdown"
+                      aria-expanded="false"
+                    >
+                      Contacts Us
+                    </a>
+                    <ul class="dropdown-menu contacts">
+                      <li>
+                        <a class="dropdown-item" href="#"
+                          ><i class="icon fa-solid fa-phone"></i> Cell Phone</a
+                        >
+                      </li>
+                      <li><hr class="dropdown-divider" /></li>
+                      <li>
+                        <a
+                          class="dropdown-item"
+                          href="mailto:?subject=Assunto&body="
+                        >
+                          <i class="fa-solid fa-message"></i> E-mail</a
+                        >
+                      </li>
+                      <li><hr class="dropdown-divider" /></li>
+                      <li>
+                        <a class="dropdown-item" href="#">
+                          <i class="fa-brands fa-instagram"></i> Social media</a
+                        >
+                      </li>
+                      <li><hr class="dropdown-divider" /></li>
+                      <li>
+                        <a
+                          class="dropdown-item"
+                          href="https://api.whatsapp.com/send/?phone=&text"
+                          target="_blank"
+                        >
+                          <i class="fa-brands fa-whatsapp"></i> Whatsapp</a
+                        >
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </nav>
+
+        <nav
+          class="navbar mainnav bg-dark navbar-expand-lg"
+          data-bs-theme="dark"
+        >
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasDarkNavbar"
+            aria-controls="offcanvasDarkNavbar"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <label class="corporate"
+            ><label class="jd"> JD</label> Concrete</label
+          >
+          <div class="navbarindex">
+            <label class="navbar-title">Gallery Page</label>
+            <div class="container-fluid">
+              <div class="collapse navbar-collapse" id="navbarScroll">
+                <ul
+                  class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll"
+                  style="--bs-scroll-height: 100px"
+                >
+                  <li class="nav-item">
+                    <a
+                      class="nav-link"
+                      aria-current="page"
+                      href="https://weridemarcondes.github.io/jdconcret/index.html"
+                      >Home</a
+                    >
+                    <!-- <a class="nav-link" aria-current="page" href="/index.html"
+                      >Home</a
+                      
+                    > -->
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a
+                      class="nav-link dropdown-toggle"
+                      href="#"
+                      role="button"
+                      data-bs-toggle="dropdown"
+                      aria-expanded="false"
+                    >
+                      Select
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li>
+                        <a class="dropdown-item" onclick="Showboom()">
+                          <i class="fa-solid fa-earth-americas"></i> boom</a
+                        >
+                      </li>
+                      <li><hr class="dropdown-divider" /></li>
+                      <li>
+                        <a
+                          class="dropdown-item"
+                          onclick="Showmaintenancehome()"
+                        >
+                          <i class="fa-solid fa-leaf"></i> line</a
+                        >
+                      </li>
+                      <li><hr class="dropdown-divider" /></li>
+                      <li>
+                        <a class="dropdown-item" onclick="Showconstruction()">
+                          <i class="fa-solid fa-helmet-safety"></i>
+                          Construction</a
+                        >
+                      </li>
+                      <li><hr class="dropdown-divider" /></li>
+                      <li>
+                        <a class="dropdown-item" onclick="ShowEverything()"
+                          ><i class="fa-solid fa-images"></i> Show Everything</a
+                        >
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a
+                      class="nav-link dropdown-toggle"
+                      href="#"
+                      role="button"
+                      data-bs-toggle="dropdown"
+                      aria-expanded="false"
+                    >
+                      Contacts Us
+                    </a>
+                    <ul class="dropdown-menu contacts">
+                      <li>
+                        <a class="dropdown-item" href="#"
+                          ><i class="icon fa-solid fa-phone"></i> Cell Phone</a
+                        >
+                      </li>
+                      <li><hr class="dropdown-divider" /></li>
+                      <li>
+                        <a
+                          class="dropdown-item"
+                          href="mailto:?subject=Assunto&body="
+                        >
+                          <i class="fa-solid fa-message"></i> E-mail</a
+                        >
+                      </li>
+                      <li><hr class="dropdown-divider" /></li>
+                      <li>
+                        <a class="dropdown-item" href="#">
+                          <i class="fa-brands fa-instagram"></i> Social media</a
+                        >
+                      </li>
+                      <li><hr class="dropdown-divider" /></li>
+                      <li>
+                        <a
+                          class="dropdown-item"
+                          href="https://api.whatsapp.com/send/?phone=&text"
+                          target="_blank"
+                        >
+                          <i class="fa-brands fa-whatsapp"></i> Whatsapp</a
+                        >
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </nav>
+        <section class="pictures">
+          <div class="row">
+            <div class="card-container boom">
+              <div class="image-card">
+                <div class="card-body">
+                  <img src="./img/boom/blue.jpeg" alt="..." />
+                  <!-- <h5 class="card-title">City Toronto</h5>
+                <h5 class="card-title">Before</h5>
+                <p class="card-text"></p> -->
+                  <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+                </div>
+              </div>
+            </div>
+
+            <div class="card-container boom">
+              <div class="image-card">
+                <div class="card-body">
+                  <img src="./img/boom/green.jpeg" alt="..." />
+                  <!-- <h5 class="card-title">City Toronto</h5>
+                <h5 class="card-title">Before</h5>
+                <p class="card-text"></p> -->
+                  <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+                </div>
+              </div>
+            </div>
+            <div class="card-container boom">
+              <div class="image-card">
+                <div class="card-body">
+                  <img src="./img/boom/orange1.jpeg" alt="..." />
+                  <!-- <h5 class="card-title">City Toronto</h5>
+                <h5 class="card-title">Before</h5>
+                <p class="card-text"></p> -->
+                  <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+                </div>
+              </div>
+            </div>
+            <div class="card-container boom">
+              <div class="image-card">
+                <div class="card-body">
+                  <img src="./img/boom/orange2.jpeg" alt="..." />
+                  <!-- <h5 class="card-title">City Toronto</h5>
+                <h5 class="card-title">Before</h5>
+                <p class="card-text"></p> -->
+                  <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+                </div>
+              </div>
+            </div>
+            <div class="card-container boom">
+              <div class="image-card">
+                <div class="card-body">
+                  <img src="./img/boom/orange3.jpeg" alt="..." />
+                  <!-- <h5 class="card-title">City Toronto</h5>
+                <h5 class="card-title">Before</h5>
+                <p class="card-text"></p> -->
+                  <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+                </div>
+              </div>
+            </div>
+            <div class="card-container boom">
+              <div class="image-card">
+                <div class="card-body">
+                  <img src="./img/boom/orange4.jpeg" alt="..." />
+                  <!-- <h5 class="card-title">City Toronto</h5>
+                <h5 class="card-title">Before</h5>
+                <p class="card-text"></p> -->
+                  <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+                </div>
+              </div>
+            </div>
+
+            <div class="card-container line">
+              <div class="image-card">
+                <div class="card-body">
+                  <img src="./img/line/line1.jpeg" alt="..." />
+                  <!-- <h5 class="card-title">City Mississauga</h5>
+                <h5 class="card-title">Before</h5>
+                <p class="card-text"></p> -->
+                  <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+                </div>
+              </div>
+            </div>
+            <div class="card-container line">
+              <div class="image-card">
+                <div class="card-body">
+                  <img src="./img/line/line2.jpeg" alt="..." />
+                  <!-- <h5 class="card-title">City Mississauga</h5>
+                <h5 class="card-title">Before</h5>
+                <p class="card-text"></p> -->
+                  <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+                </div>
+              </div>
+            </div>
+            <div class="card-container line">
+              <div class="image-card">
+                <div class="card-body">
+                  <img src="./img/line/line3.jpeg" alt="..." />
+                  <!-- <h5 class="card-title">City Mississauga</h5>
+                <h5 class="card-title">Before</h5>
+                <p class="card-text"></p> -->
+                  <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+                </div>
+              </div>
+            </div>
+            <div class="card-container line">
+              <div class="image-card">
+                <div class="card-body">
+                  <img src="./img/line/line4.jpeg" alt="..." />
+                  <!-- <h5 class="card-title">City Mississauga</h5>
+                <h5 class="card-title">Before</h5>
+                <p class="card-text"></p> -->
+                  <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+                </div>
+              </div>
+            </div>
+
+            <div class="card-container construction">
+              <div class="image-card">
+                <div class="card-body">
+                  <img
+                    src="./img/construction/broesis-tunnel-2316267.jpg"
+                    alt="..."
+                  />
+                  <!-- <h5 class="card-title">City Vaughan</h5>
+                <h5 class="card-title">After</h5>
+                <p class="card-text">Post construction clean 2 hours after</p> -->
+                  <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+                </div>
+              </div>
+            </div>
+
+            <div class="card-container construction">
+              <div class="image-card">
+                <div class="card-body">
+                  <img
+                    src="./img/construction/klinkow-road-construction-975128_1920.jpg"
+                    alt="..."
+                  />
+                  <!-- <h5 class="card-title">City Vaughan</h5>
+                <h5 class="card-title">Before</h5>
+                <p class="card-text"></p> -->
+                  <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+                </div>
+              </div>
+            </div>
+            <div class="card-container construction">
+              <div class="image-card">
+                <div class="card-body">
+                  <img
+                    src="./img/construction/nennieinszweidrei-excavator-4794330_1920.jpg"
+                    alt="..."
+                  />
+                  <!-- <h5 class="card-title">City Vaughan</h5>
+                <h5 class="card-title">Before</h5>
+                <p class="card-text"></p> -->
+                  <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+                </div>
+              </div>
+            </div>
+            <div class="card-container construction">
+              <div class="image-card">
+                <div class="card-body">
+                  <img
+                    src="./img/construction/randy_puh-construction-machine-3394710_1920.jpg"
+                    alt="..."
+                  />
+                  <!-- <h5 class="card-title">City Vaughan</h5>
+                <h5 class="card-title">Before</h5>
+                <p class="card-text"></p> -->
+                  <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+                </div>
+              </div>
+            </div>
+          </div>
+          <footer>
+            <nav class="navbar-final">
+              <div class="colum">
+                <div class="col">
+                  <label class="navbar-brand"
+                    ><label class="jdcell jd">Follow Us</label></label
+                  >
+                </div>
+                <!-- Link para o Facebook -->
+                <a
+                  href="https://www.facebook.com/people/JD-Concrete-Pumping/100083258835101/#"
+                  target="_blank"
+                  style="text-decoration: none"
+                >
+                  <i class="fa-brands fa-facebook links_navdown"></i>
+                </a>
+
+                <!-- Link para o Instagram -->
+                <a
+                  href="https://www.instagram.com/jd_pumping/?hl=en"
+                  target="_blank"
+                  style="text-decoration: none"
+                >
+                  <i class="fa-brands fa-instagram links_navdown"></i>
+                </a>
+
+                <a href="https://www.tiktok.com/@jdpumping" target="_blank">
+                  <i class="fa-brands fa-tiktok links_navdown"></i>
+                </a>
+              </div>
+            </nav>
+          </footer>
+        </section>
+      </div>
+    </header>
+  </body>
+</html>
