@@ -404,6 +404,10 @@ body {
     align-items: center; /* Centraliza na vertical */
     margin: auto;
   }
+  /* .local {
+    margin: auto;
+    margin-left: 100px;
+  } */
 
   .button_schendule {
     background-color: #ae6271;
@@ -654,6 +658,11 @@ body {
     background-repeat: no-repeat;
   }
 
+  .container-fluid {
+    text-align: center;
+    justify-content: center;
+  }
+
   .local {
     color: #8a3d4d;
   }
@@ -705,6 +714,15 @@ body {
     background-size: cover; /* Faz a imagem cobrir o card */
     background-position: center; /* Centraliza */
     background-repeat: no-repeat; /* Evita repetição */
+  }
+
+  /* .local {
+    margin: auto;
+    margin-left: 200px;
+  } */
+
+  .container-fluid {
+    text-align: center;
   }
 
   .card-image-about {
